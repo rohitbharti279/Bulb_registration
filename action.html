@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <link rel="stylesheet" href="./bootstrap-5.3.0-dist/css/bootstrap.min.css" />
+  <title>Bulb Function</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/6dc7929f7c.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-cyan-200">
+  <div class="flex justify-around">
+    <div id="welcome" class="flex"></div>
+    <p class="flex items-center gap-2 text-2xl">
+      <span>Log Out</span><a href="index.html">
+        <img src="/svg/right-from-bracket-solid.svg" alt="Log out" /></a>
+    </p>
+  </div>
+  <div class="bulb-container flex flex-col items-center gap-3">
+    <img id="bulb-image" src="/image/off.png" alt="bulb-off" />
+    <div class="switch">
+      <div class="on-off-button"></div>
+    </div>
+    <div class="burn-counter text-xl">
+      <p>Total times the bulb has glowed: <span id="glow-count">0</span></p>
+    </div>
+    <div class="information flex gap-5 flex-wrap hidden p-4 rounded justify-center">
+      <div id="information-on"></div>
+      <div id="information-off"></div>
+    </div>
+  </div>
+
+  <script src="/js/main.js"></script>
+</body>
+
+</html>
